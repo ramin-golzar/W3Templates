@@ -10,6 +10,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="./css/w3.css"/>
+        <link rel="stylesheet" href="./css/css/all.css"/>
+        <script src="./css/js/all.js"></script>
+        
+        
+        <style>
+            .submit-search {
+                position: absolute; 
+                left: 0; 
+                top: 0; 
+                width: 100%; 
+                height: 100%;
+                border: 0; 
+                outline: 0; 
+                background-color: #0000; 
+                cursor: pointer
+            }
+        </style>
     </head>
     <body class="w3-container w3-blue" style="margin: 0; padding: 0;">
         <!-- Navigation one -->
@@ -517,5 +534,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <a href="#" class="w3-cell w3-padding">HTML</a>
             <a href="#" class="w3-cell w3-padding">HTML</a>
         </nav>
+        
+        <!-- Learn to code -->
+        <div class="w3-black w3-row w3-padding-64">
+            <h2 class="w3-center w3-jumbo"><b>Loarn to Code</b></h2>
+            <p class="w3-center w3-xlarge w3-serif"><b>With the world's largest web developer site. </b></p>
+            
+            <form action="." class="w3-row w3-display-container" style="height: 60px;">
+                <div class="w3-display-middle w3-green w3-round-xxlarge" style="width: 60%; overflow: hidden">
+                    <!-- search text box -->
+                    <div class="w3-white w3-threequarter">
+                        <input type="search" class="w3-input" id="search" name="search" placeholder="Search our tutorials, e.g. HTML" style="outline: 0;">
+                    </div>
+                    
+                    <!-- search icon -->
+                    <div style="position: relative;" class="w3-quarter w3-center">
+                        <i class="fas fa-search w3-padding-large"></i>
+                        
+                        <input type="submit" value="" class="submit-search">
+                    </div>
+                </div>
+            </form>
+            
+            <div class="w3-center w3-large w3-section">
+                <a href="#"><b>Not Sure Where To Begin?</b></a>
+            </div>
+        </div>
     </body>
 </html>
