@@ -30,7 +30,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </style>
     </head>
     <body class="w3-container" style="margin: 0; padding: 0;">
-        <!-- Navigation one -->
+        <header class="w3-red w3-top">
+        <!-- first navigation -->
         <nav class="w3-bar w3-white">
             <!-- Brand -->
             <div class="w3-bar-item">
@@ -41,7 +42,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="">
                 <div class="w3-dropdown-hover">
                     <!-- ToDo: chevron icon -->
-                    <span class="w3-button w3-white w3-hover-green">Tutorials</span>
+                    <span class="w3-button w3-white w3-hover-green w3-padding-16">Tutorials <i class="fas fa-caret-down"></i></span>
                     <div class="w3-border w3-black w3-dropdown-content w3-container" style="left: 0; width: 100%;">
                         <div class="w3-row">
                             <h2>Tutorials</h2>
@@ -210,7 +211,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="">
                 <div class="w3-dropdown-hover">
                     <!-- ToDo: chevron icon -->
-                    <span class="w3-button w3-white w3-hover-green">Excersise</span>
+                    <span class="w3-button w3-white w3-hover-green w3-padding-16">Excersise <i class="fas fa-caret-down"></i></span>
                     <div class="w3-border w3-black w3-dropdown-content w3-container" style="left: 0; width: 100%;">
                         <div class="w3-row">
                             <h2>Tutorials</h2>
@@ -358,7 +359,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <div class="">
                 <div class="w3-dropdown-hover">
                     <!-- ToDo: chevron icon -->
-                    <span class="w3-button w3-white w3-hover-green">Services</span>
+                    <span class="w3-button w3-white w3-hover-green w3-padding-16">Services <i class="fas fa-caret-down"></i></span>
                     <div class="w3-border w3-black w3-dropdown-content w3-container" style="left: 0; width: 100%;">
                         <div class="w3-row">
                             <h2>All Our Services</h2>
@@ -506,21 +507,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <!-- Search box -->
             <div class="w3-bar-item">
                 <form action="." method="post" style="width: 130px;">
-                    <input type="search" id="search" name="search" class="w3-border w3-input w3-round-xxlarge" placeholder="Search...">
+                    <input type="search" id="search" name="search" class="w3-border w3-border-grey w3-input w3-round-xxlarge" placeholder="Search...">
                 </form>
             </div>
             
             <!-- Icon -->
-            <div class="w3-bar-item">
-                <button class="w3-button">O</button>
+            <div class="w3-bar-item w3-padding-16">
+                <i class="fas fa-moon w3-xlarge"></i>
             </div>
             
-            <div class="w3-right w3-bar-item">
-                <a href="#" class="w3-margin-right">Sign Up</a>
-                <a href="#">Log In</a>
+            <div class="w3-right" style="position: relative; top: 10px;">
+                <a href="#" class="w3-button w3-green w3-round-xxlarge w3-hover-green">Sign Up</a>
+                <a href="#" class="w3-white w3-button w3-round-xxlarge w3-hover-green">Log In</a>
             </div>
         </nav>
         
+        <!-- second navigation -->
         <nav class="w3-cell-row w3-black">
             <a href="#" class="w3-cell w3-padding">HTML</a>
             <a href="#" class="w3-cell w3-padding">HTML</a>
@@ -535,32 +537,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <a href="#" class="w3-cell w3-padding">HTML</a>
             <a href="#" class="w3-cell w3-padding">HTML</a>
         </nav>
+        </header>
         
         <!-- Learn to code -->
-        <div class="w3-black w3-row w3-padding-64">
-            <h2 class="w3-center w3-jumbo"><b>Loarn to Code</b></h2>
-            <p class="w3-center w3-xlarge w3-serif"><b>With the world's largest web developer site. </b></p>
-            
-            <form action="." class="w3-row w3-display-container" style="height: 60px;">
-                <div class="w3-display-middle w3-green w3-round-xxlarge" style="width: 60%; overflow: hidden">
-                    <!-- search text box -->
-                    <div class="w3-white w3-threequarter">
-                        <input type="search" class="w3-input" id="search" name="search" placeholder="Search our tutorials, e.g. HTML" style="outline: 0;">
+        <section class="w3-padding-top-64">
+            <article class="w3-black w3-row w3-padding-64">
+                <h2 class="w3-center w3-jumbo"><b>Loarn to Code</b></h2>
+                <p class="w3-center w3-xlarge w3-serif"><b>With the world's largest web developer site. </b></p>
+
+                <form action="." class="w3-row w3-display-container" style="height: 60px;">
+                    <div class="w3-display-middle w3-green w3-round-xxlarge" style="width: 60%; overflow: hidden">
+                        <!-- search text box -->
+                        <div class="w3-white w3-threequarter">
+                            <input type="search" class="w3-input" id="search" name="search" placeholder="Search our tutorials, e.g. HTML" style="outline: 0;">
+                        </div>
+
+                        <!-- search icon -->
+                        <div style="position: relative;" class="w3-quarter w3-center">
+                            <i class="fas fa-search w3-padding-large"></i>
+
+                            <input type="submit" value="" class="submit-search">
+                        </div>
                     </div>
-                    
-                    <!-- search icon -->
-                    <div style="position: relative;" class="w3-quarter w3-center">
-                        <i class="fas fa-search w3-padding-large"></i>
-                        
-                        <input type="submit" value="" class="submit-search">
-                    </div>
+                </form>
+
+                <div class="w3-center w3-large w3-section">
+                    <a href="#"><b>Not Sure Where To Begin?</b></a>
                 </div>
-            </form>
-            
-            <div class="w3-center w3-large w3-section">
-                <a href="#"><b>Not Sure Where To Begin?</b></a>
-            </div>
-        </div>
+            </article>
+        </section>
         
         <!-- html section -->
         <div class="w3-pale-blue w3-center w3-row w3-padding-64">
